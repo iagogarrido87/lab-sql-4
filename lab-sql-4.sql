@@ -1,0 +1,10 @@
+SELECT rating FROM film;
+SELECT DISTINCT EXTRACT(YEAR FROM release_year) AS year FROM film;
+SELECT * FROM film WHERE title LIKE '%ARMAGEDDON%';
+SELECT * FROM film WHERE title LIKE '%APOLLO%';
+SELECT * FROM film WHERE title LIKE '%APOLLO';
+SELECT * FROM film WHERE title LIKE '%DATE%';
+SELECT * FROM film ORDER BY LENGTH(title) DESC LIMIT 10;
+SELECT * FROM film ORDER BY length DESC LIMIT 10;
+SELECT COUNT(*) FROM film WHERE special_features LIKE '%Behind the Scenes%';
+SELECT * FROM film ORDER BY release_year, title;
